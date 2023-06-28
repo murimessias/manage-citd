@@ -2,7 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body {
+@layer base {
+  :root {
+    --ring: 240 5% 64.9%;
+  }
+}
+
+html,
+body {
   height: 100%;
 }
 

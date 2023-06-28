@@ -1,4 +1,7 @@
+const defaultTheme = require("tailwindcss/defaultTheme")
+
 const radiusAndSpacing = {
+  0: "0px",
   1: "8px",
   1.5: "12px",
   2: "16px",
@@ -18,6 +21,7 @@ module.exports = {
     spacing: radiusAndSpacing,
     borderRadius: {
       ...radiusAndSpacing,
+      ...defaultTheme.borderRadius,
       full: "9999px",
     },
     colors: {
@@ -36,6 +40,7 @@ module.exports = {
       danger: {
         100: "#A14445",
       },
+      ring: "hsl(var(--ring))",
     },
     fontSize: {
       "body-xs": "1.2rem",
