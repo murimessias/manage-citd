@@ -77,7 +77,7 @@ export default function Event({ params }: EventProps) {
   }
 
   return (
-    <main className="text-neutral-900 text-body-lg">
+    <main className="text-body-lg text-neutral-900">
       <h1>Code in the Dark {event}</h1>
       <nav>
         <ul>

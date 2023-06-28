@@ -22,7 +22,7 @@ export function TableBody({
           <td>
             <input
               type="checkbox"
-              className="w-8 h-8"
+              className="h-8 w-8"
               defaultChecked={participant.wannaPlay}
               onClick={() => onCheckParticipant(participant.id)}
             />
